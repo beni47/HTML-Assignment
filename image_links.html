@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+        background-color:  #047280;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        }
+        nav {
+        background-color: #333;
+        color: #fff;
+        }
+
+        nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        }
+        
+         nav ul li {
+        float: left;
+         }
+
+        nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+         nav ul li a:hover {
+        background-color: #111;
+         }
+
+        main {
+        padding: 20px;
+        margin-bottom: 50px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #047280;
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .food-item {
+        display: flex;
+        margin-bottom: 20px;
+        }
+
+        .food-item img {
+        max-width: 200px;
+        height: auto;
+        margin-right: 20px;
+        }
+
+        .food-description {
+        flex: 1;
+        }
+
+        .food-description h3 {
+        margin-top: 0;
+        }
+
+        .food-description p {
+        margin-bottom: 10px;
+        }
+        .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+        }
+
+        .image-grid a {
+        display: block;
+        text-decoration: none;
+        }
+
+        .image-grid img {
+        width: 100%;
+        height: auto;
+        }
+        section#menu img {
+    transition: transform 0.3s ease; 
+        }   
+
+        section#menu img:hover {
+        transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our homepage!</p>
+            <p>We're thrilled to have you here.</p>
+            <p>Feel free to browse around, discover what we have to offer, and don't hesitate to reach out if you have any questions or need assistance. We're here to make your experience enjoyable and worthwhile.</p>
+            <a href="https://example.com/technology" target="_blank"> 
+                <img src=" C:\Users\LENOVO\Desktop\PLP\Assignment 2\tech.png" alt="Technology Image">
+            </a>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Here are some beautiful images related to nature:</p>
+        
+            <div class="image-grid">
+                <a href="https://example.com/nature" target="_blank">
+                    <img src="C:\Users\LENOVO\Desktop\PLP\Assignment 2\ENV.png" alt="Nature Image 1">
+                </a>
+        
+                <a href="https://example.com/nature" target="_blank">
+                    <img src="C:\Users\LENOVO\Desktop\PLP\Assignment 2\hills mountains.jpg" alt="Nature Image 2">
+                </a>
+        
+                <a href="https://example.com/nature" target="_blank">
+                    <img src="C:\Users\LENOVO\Desktop\PLP\Assignment 2\rivers.jpeg" alt="Nature Image 3">
+                </a>
+        
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <p>Check out our delicious food items:</p>
+            <div class="food-item">
+                <a href= "https://pastries.com/" target="_blank">
+                <img src="C:\Users\LENOVO\Desktop\PLP\Assignment 2\Pastires.jpeg"   alt="Pastries">     
+                </a>    
+                   <div class = "food-description">
+                    <h3>Pastries</h3>
+                    <p> Enjoy a wide array of the best pastries in town</p>
+                    </div>  
+            </div>
+        
+            <div class="food-item">
+                <a href= "https://www.icecream.com/" target="_blank">
+                <img src= "C:\Users\LENOVO\Desktop\PLP\Assignment 2\Icecream.jpeg"  alt="Ice cream">
+                </a>
+                    <div class="food-description">
+                    <h3>Ice cream </h3>
+                    <p>Beat this heat with the best ice cream around</p>
+                    </div>
+            </div>
+        
+            <div class="food-item">
+                <a href=" https://www.liptonkitchens.com/home.html" target="_blank">
+                <img src="C:\Users\LENOVO\Desktop\PLP\Assignment 2\soups.jpeg" alt="Food Image 3">
+            </a>
+                <div class="food-description">
+                    <h3>Soups</h3>
+                    <p>Best soups in town</p>
+                    
+                </div>
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <p>&copy; 2024 Image Links Page</p>
+    </footer>
+</body>
+</html>
